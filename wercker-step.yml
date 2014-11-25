@@ -1,0 +1,40 @@
+name: hipchat-notify-v2
+version: 0.0.1
+description: Send a message to a HipChat room.|-
+  This is using the HipChat API V2 and |
+  can specify the target branch to notify.
+keywords:
+  - notification
+  - hipchat
+properties:
+  token:
+    type: string
+    required: true
+  room-id:
+    type: string
+    required: true
+  from-name:
+    type: string
+    default: wercker
+  failed-message:
+    type: string
+  failed-color:
+    type: string
+    default: red
+  failed-notify:
+    type: string
+    default: "true"
+  passed-message:
+    type: string
+  passed-color:
+    type: string
+    default: green
+  passed-notify:
+    type: string
+    default: "false"
+  on:
+    type: string
+    default: always
+  target-branch:
+    type: string
+    default: "all"
