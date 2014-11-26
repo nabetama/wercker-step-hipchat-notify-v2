@@ -1,9 +1,21 @@
 # coding: utf-8
 
+from __future__ import print_function
 import sys
 
-from lib.hipchat import HipChat
+from hipchat import HipChat
 
+ARGS_NUM = 9
+
+
+if len(sys.argv) < ARGS_NUM:
+    print('main.py takes exactly {0} arguments ({1} given)'.format(
+            ARGS_NUM,
+            len(sys.argv),
+            )
+        )
+    print("sys.argv: {0}".format(sys.argv))
+    sys.exit(0)
 
 config = {
     'token'        : str(sys.argv[1]),
@@ -26,9 +38,12 @@ if config['target_branch'] == 'all' or config['target_branch'] == config['build_
     is_post = True
 
 if not is_post:
-    print '''Build branch:{build_branch} is not a target of notification.
+    print('''Build branch:{build_branch} is not a target of notification.
             target_branch: {target_branch}'''.format(
                 build_branch  = config['build_branch'],
                 target_branch = config['target_branch']
             )
+        )
     sys.exit(0)
+
+hipchat = HipChat(config)
