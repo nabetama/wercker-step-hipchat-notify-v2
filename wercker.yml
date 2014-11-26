@@ -1,5 +1,5 @@
 box: wercker/python
 build:
   steps:
-    - pip-install:
+    - pip-install
     - validate-wercker-step
