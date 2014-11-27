@@ -47,3 +47,4 @@ if not is_post:
     sys.exit(0)
 
 hipchat = HipChat(config)
+hipchat.send_message()
