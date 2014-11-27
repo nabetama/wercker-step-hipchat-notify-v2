@@ -7,7 +7,7 @@ can specify the target branch to notify.
 
 # What's new
 
-- released v0.0.1.
+- released 0.0.4.
 
 # Options
 
@@ -27,6 +27,9 @@ can specify the target branch to notify.
 
 Add HIPCHAT_TOKEN as deploy target or application environment variable.
 
+
+### wercker.yml in your application.
+
 ```yaml
 build:
   after-steps:
@@ -35,6 +38,13 @@ build:
         room-id: id
         from-name: name
         target-branch: master
+```
+
+
+### requirements.txt
+
+```python
+hypchat==0.16
 ```
 
 # License
