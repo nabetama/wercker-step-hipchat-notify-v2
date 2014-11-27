@@ -1,5 +1,5 @@
 name: hipchat-notify-v2
-version: 0.0.1
+version: 0.0.2
 description: Send a message to a HipChat room.|-
   This is using the HipChat API V2 and |
   can specify the target branch to notify.
