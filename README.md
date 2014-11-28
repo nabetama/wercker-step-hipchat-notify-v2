@@ -32,6 +32,12 @@ Add HIPCHAT_TOKEN as deploy target or application environment variable.
 
 ```yaml
 build:
+  steps:
+    - script:
+      name: 'pip install hypchat'
+      sudo: yes
+        code: |
+          pip install hypchat
   after-steps:
     - hipchat-notify:
         token: $HIPCHAT_TOKEN
@@ -40,26 +46,14 @@ build:
         target-branch: master
 ```
 
-### requirements.txt in your application.
-```python
-hypchat==0.16
-```
-
-
-### requirements.txt
-
-```python
-hypchat==0.16
-```
-
 # License
 
 The MIT License (MIT)
 
 # Changelog
 
-## 0.0.5
-- Update README.md
+## 0.0.6
+- This application is dependent on [hypchat](https://github.com/RidersDiscountCom/HypChat).
 
 # wercker status
 
