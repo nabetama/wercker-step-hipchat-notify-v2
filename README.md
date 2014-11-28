@@ -7,7 +7,7 @@ can specify the target branch to notify.
 
 # What's new
 
-- released 0.0.4.
+- released 0.0.62.
 
 # Options
 
@@ -40,10 +40,10 @@ build:
         pip install hypchat
   after-steps:
     - hipchat-notify:
-        token: $HIPCHAT_TOKEN
-        room-id: id
-        from-name: name
-        target-branch: master
+      token: $HIPCHAT_TOKEN
+      room-id: id
+      from-name: name
+      target-branch: master
 ```
 
 # License
@@ -52,7 +52,7 @@ The MIT License (MIT)
 
 # Changelog
 
-## 0.0.61
+## 0.0.62
 - This application is dependent on [hypchat](https://github.com/RidersDiscountCom/HypChat).
 
 # wercker status
