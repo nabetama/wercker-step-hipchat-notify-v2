@@ -40,6 +40,11 @@ build:
         target-branch: master
 ```
 
+### requirements.txt in your application.
+```python
+hypchat==0.16
+```
+
 
 ### requirements.txt
 
@@ -53,8 +58,8 @@ The MIT License (MIT)
 
 # Changelog
 
-## 0.0.1
--  released
+## 0.0.5
+- Update README.md
 
 # wercker status
 
