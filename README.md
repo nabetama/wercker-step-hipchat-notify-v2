@@ -57,3 +57,4 @@ The MIT License (MIT)
 
 # wercker status
 
+[![wercker status](https://app.wercker.com/status/85bd5d4c1daac9737263594e3db443a3/m "wercker status")](https://app.wercker.com/project/bykey/85bd5d4c1daac9737263594e3db443a3)
