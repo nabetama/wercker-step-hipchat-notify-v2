@@ -36,8 +36,8 @@ build:
     - script:
       name: 'pip install hypchat'
       sudo: yes
-        code: |
-          pip install hypchat
+      code: |
+        pip install hypchat
   after-steps:
     - hipchat-notify:
         token: $HIPCHAT_TOKEN
@@ -52,7 +52,7 @@ The MIT License (MIT)
 
 # Changelog
 
-## 0.0.6
+## 0.0.61
 - This application is dependent on [hypchat](https://github.com/RidersDiscountCom/HypChat).
 
 # wercker status
